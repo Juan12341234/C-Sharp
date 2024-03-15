@@ -1,25 +1,219 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.9.34607.119
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funciones", "Funciones\Funciones.csproj", "{AA720607-CB61-4798-88B9-52349193F4D7}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AA720607-CB61-4798-88B9-52349193F4D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA720607-CB61-4798-88B9-52349193F4D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA720607-CB61-4798-88B9-52349193F4D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA720607-CB61-4798-88B9-52349193F4D7}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {ACDE7A30-01F6-46DD-8F23-0864A72E2F1D}
-	EndGlobalSection
-EndGlobal
+using System;
+
+class funciones
+{
+    //Punto 1
+
+    //static void Main()
+    //{
+    //    Console.WriteLine("¡Bienvenido!\nCalcula tu edad\n");
+    //    Console.WriteLine("\nTu edad actual es "+ edad()+ " años.");
+    //}
+
+    //static int edad()
+    //{
+    //    Console.WriteLine("Ingresa el año de tu nacimiento: ");
+    //    int fechaNacimiento = Convert.ToInt32(Console.ReadLine());
+    //    Console.WriteLine("\nIngresa el año actual: ");
+    //    int fechaActual = Convert.ToInt32(Console.ReadLine());
+    //    return fechaActual - fechaNacimiento;
+    //}
+
+
+
+    //Punto 2
+
+    //static void Main()
+    //{
+    //    Console.WriteLine("¡Bienvenido a Tus Operaciones!");
+    //    operaciones();
+    //}
+
+    //static void operaciones()
+    //{
+    //    int opc = 0;
+    //    do
+    //    {
+    //        Console.WriteLine("\n1. Dividir" +
+    //            "\n2. Obtener Cubo" +
+    //            "\n3. Calculo de IMC" +
+    //            "\n0. Salir");
+    //        Console.WriteLine("\nElige una opcion:");
+    //        opc = Convert.ToInt32(Console.ReadLine());
+    //        switch (opc)
+    //        {
+    //            case 0:
+    //                Console.WriteLine("\nHaz salido de nuestro programa");
+    //                break;
+    //            case 1:
+    //                Console.WriteLine("\nDIVISIÓN");
+    //                Console.WriteLine("\nIngresa el número divisor: ");
+    //                double numUno = Convert.ToDouble(Console.ReadLine());
+    //                if (numUno > 0)
+    //                {
+    //                    Console.WriteLine("\nIngresa el número dividendo: ");
+    //                    double numDos = Convert.ToDouble(Console.ReadLine());
+    //                    double result = numUno / numDos;
+    //                    Console.WriteLine("\nEl resultado de la división es " + result);
+    //                }
+    //                else
+    //                {
+    //                    Console.WriteLine("\nError: No se puede dividir por ceros.");
+    //                }
+    //                break;
+    //            case 2:
+    //                Console.WriteLine("\nELEVAR AL CUBO");
+    //                Console.WriteLine("\nIngresa un número: ");
+    //                double num = Convert.ToDouble(Console.ReadLine());
+    //                if (num > 0)
+    //                {
+    //                    double resultUno = Math.Pow(num, 3);
+    //                    Console.WriteLine("\nEl resultado de la elevación al cubo es " + resultUno);
+    //                }
+    //                else
+    //                {
+    //                    Console.WriteLine("\nError: Ingresa un número mayor de cero.");
+    //                }
+    //                break;
+    //            case 3:
+    //                Console.WriteLine("\nIMC");
+    //                Console.WriteLine("\nIngresa tu peso en (KG): ");
+    //                double peso = Convert.ToDouble(Console.ReadLine());
+    //                if (peso > 0)
+    //                {
+    //                    Console.WriteLine("\nIngresa tu estatura en (m): ");
+    //                    double altura = Convert.ToDouble(Console.ReadLine());
+    //                    if(altura > 0)
+    //                    {
+    //                        double imc = peso / Math.Pow(altura, 2);
+    //                        Console.WriteLine("\nEl resultado del indice de masa corporal es " + imc);
+    //                    }
+    //                    else
+    //                    {
+    //                        Console.WriteLine("\nError: Ingresa una altura valida");
+    //                    }
+    //                }
+    //                else
+    //                {
+    //                    Console.WriteLine("\nError: Ingresa un peso valido.");
+    //                }
+    //                break;
+    //            default:
+    //                Console.WriteLine("Error: Ingresa una opción valida.");
+    //                break;
+    //        }
+    //    } while (opc != 0);
+    //}
+
+    
+
+    //Punto 3
+    
+    //static void Main()
+    //{
+    //    Console.WriteLine("¡Bienvenido PolarRectangular!");
+    //    Console.WriteLine(polarARectangular());
+    //}
+
+    //static String polarARectangular()
+    //{
+    //    Console.WriteLine("\nIngresa el radio: ");
+    //    double radio = Convert.ToDouble(Console.ReadLine());
+    //    Console.WriteLine("\nIngresa el angulo de inclinación: ");
+    //    double grados = Convert.ToDouble(Console.ReadLine());
+    //    double x = Math.Floor(radio*Math.Cos(grados));
+    //    double y = Math.Floor(radio*Math.Sin(grados));
+    //    return "\nConversion de Polar a Rectangular" +
+    //        "\nLa X vale "+x+"\t la Y vale "+y;
+    //}
+
+
+
+    //Punto 4
+
+    //static void Main()
+    //{
+    //    Console.WriteLine("Progresión de Números");
+    //    progresion();
+    //}
+    //static void progresion()
+    //{
+    //    Console.WriteLine("\nIngresa el limite: ");
+    //    int limite = Convert.ToInt32(Console.ReadLine());
+    //    Console.WriteLine("\nIngresa el número 1: ");
+    //    int numUno = Convert.ToInt32(Console.ReadLine());
+    //    Console.WriteLine("\nIngresa el número 2: ");
+    //    int numDos = Convert.ToInt32(Console.ReadLine());
+    //    for (int i = 0; i < limite; i++)
+    //    {
+    //        Console.Write(numUno+" "+ numDos+" + ");
+    //        numUno++;
+    //        numDos++;
+    //    }
+    //}
+
+
+
+    //Punto 5
+
+    //static void Main()
+    //{
+    //    Console.WriteLine("¡Bienvenido Fibonacci!");
+    //    fibonacci();
+    //}
+
+    //static void fibonacci()
+    //{
+    //    int numUno = 0;
+    //    int numDos = 1;
+    //    int acomulador = 0; 
+    //    Console.WriteLine("\nIngresa el limite de la serie: ");
+    //    int limite = Convert.ToInt32(Console.ReadLine());
+    //    Console.WriteLine("");
+    //    for (int i = 1; i <= limite; i++)
+    //    {
+    //        numUno = numDos;
+    //        numDos = acomulador;
+    //        acomulador = numUno + numDos;
+    //        Console.WriteLine(acomulador);
+    //    }
+    //}
+
+
+
+    //Punto 6
+
+    //static void Main()
+    //{
+    //    Console.WriteLine("\nCiclo Infinito");
+    //    secuencia();
+    //}
+
+    //static void secuencia()
+    //{
+    //    Console.WriteLine("\nIngresa el ultimo número: ");
+    //    int limiteCiclo = Convert.ToInt32(Console.ReadLine());
+
+    //    for (int i = 0; i < limiteCiclo; i++)
+    //    {
+    //        Console.Write((i+1) + "     ");
+    //    }
+    //    Console.WriteLine("");
+    //    for (int i = 0; i < limiteCiclo; i++)
+    //    {
+    //        Console.Write("__    ");
+    //    }
+    //    Console.WriteLine("");
+    //    for (int i = 0; i < limiteCiclo; i++)
+    //    {
+    //        if (i == 0)
+    //        {
+    //            Console.Write("2   ");
+    //        }
+    //        else
+    //        {
+    //            Console.Write("2^" + (i + 1) + "   ");
+    //        }
+    //    }
+    //}
+}
